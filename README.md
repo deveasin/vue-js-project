@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### Change the root API url
+```
+from root folder > src > config.js   Note: just add the api folder link. https://prnt.sc/v6j42j
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
