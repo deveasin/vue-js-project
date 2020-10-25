@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vee-validate": "^3.4.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.7",
+    "vuedraggable": "^2.24.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
