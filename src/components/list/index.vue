@@ -25,7 +25,7 @@
                 <draggable v-model="list.rows" handle=".handle" group="oka" ghost-class="ghost" @end="onEnd">
                     <transition-group type="transition" name="flip-list">
                         <tr class="handle" v-for="(rowEl, rowIndex) in list.rows" :key="rowIndex">
-                            <td v-show="!header.hidden" v-for="(header, key, index) in headers" :key="index"><router-link target="_blank" v-if="key == 'id'" :to="'/form/'+ rowEl[key]">{{rowEl[key]}}</router-link><template v-else>{{rowEl[key]}}</template></td>
+                            <td v-show="!header.hidden" v-for="(header, key, index) in headers" :key="index"><router-link target="_blank" v-if="key.toLowerCase() == 'id'" :to="'/form/'+ rowEl[key]">{{rowEl[key]}}</router-link><template v-else>{{rowEl[key]}}</template></td>
                         </tr>
                     </transition-group>
                 </draggable>
